@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview_content"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cw_child_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/elevation1"
+        app:cardElevation="@dimen/elevation_content"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="?selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="106dp" />
+
+            <TextView
+                android:id="@+id/tv_movies_title"
+                style="@style/tv_title.strong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_top_8"
+                android:layout_marginTop="@dimen/margin_start_8"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="none"
+                android:fadingEdgeLength="16dp"
+                android:maxLines="2"
+                android:requiresFadingEdge="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_date_release"
+                style="@style/tv_subtitle.medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="4dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_movies_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_movies_title" />
+
+            <TextView
+                android:id="@+id/tv_movies_description"
+                style="@style/tv_contents.medium"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_top_8"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="@dimen/margin_bottom_8"
+                android:ellipsize="none"
+                android:fadingEdgeLength="16dp"
+                android:fadingEdge="horizontal"
+                android:lines="4"
+                android:maxLines="4"
+                android:requiresFadingEdge="horizontal"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/tv_movies_score"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_date_release"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date_release" />
+
+            <TextView
+                android:id="@+id/tv_movies_score"
+                style="@style/tv_header.strong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_8"
+                android:layout_marginBottom="@dimen/margin_bottom_8"
+                android:drawableStart="@drawable/ic_star"
+                android:drawablePadding="@dimen/padding_8"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="130dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:elevation="@dimen/elevation_surface_components"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="@dimen/elevation_content_active"
+        app:cardBackgroundColor="@color/elevation8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_movies_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transitionName="contentImg"
+            android:background="@color/elevation4"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_layout_titles">
+        <item>@string/label_tab_movies</item>
+        <item>@string/label_tab_tv_show</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--main scheme color-->
+    <color name="colorPrimary">#FCD13A</color>
+    <color name="colorPrimaryVariant">#F0D26C</color>
+    <color name="colorPrimaryDark">#BD9C25</color>
+
+    <color name="elevation0">#121212</color>
+    <color name="elevation1">#1E1E1E</color>
+    <color name="elevation4">#272727</color>
+    <color name="elevation6">#2C2C2C</color>
+    <color name="elevation8">#313131</color>
+
+    <!--text color-->
+    <color name="white_high">#DEFFFFFF</color>
+    <color name="white_medium">#99FFFFFF</color>
+    <color name="white_low">#66FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black30">#4D000000</color>
+
+    <!--general color-->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+</resources>

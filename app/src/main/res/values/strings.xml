@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+
+    <string name="label_overview">Overview</string>
+
+    <string name="label_tab_movies">MOVIES</string>
+    <string name="label_tab_tv_show">TV SHOW</string>
+
+    <string name="label_menu_add_favorite">Add Favorite</string>
+    <string name="label_menu_language">Settings</string>
+
+    <string name="content_desc_content_trailer">Content Trailer</string>
+    <string name="content_desc_content_trailer_mask">Content Trailer Mask</string>
+    <string name="content_desc_button_to_play_trailer">Button to play trailer</string>
+    <string name="content_desc_content_thumbnail">Content Thumbnail</string>
+    <string name="msg_add_favorite"> has added to favorite</string>
+    <string name="msg_remove_favorite"> has removed from favorite</string>
+    <string name="lbl_tab_menu_all">All</string>
+    <string name="content_desc_loading_icon">Loading Icon</string>
+    <string name="lbl_widget_title">Your Favorites</string>
+    <string name="lbl_widget_empty_view">Oops, it\'s empty :(</string>
+    <string name="lbl_notification_subscription">New Content Update Notification</string>
+    <string name="lbl_language_english">English</string>
+    <string name="lbl_language_indonesia">Indonesia</string>
+    <string name="lbl_change_language">Change Language</string>
+
+    <string name="msg_daily_reminder_subtitle">Daily</string>
+    <string name="msg_daily_reminder_message">Hey, don\'t forgot to check up to app</string>
+    <string name="msg_new_content_subtitle">New Content!</string>
+    <string name="msg_new_content_message">Hey, we\'ve got something fresh. Wanna check it first?</string>
+    <string name="lbl_daily_reminder">Daily Reminder Notification</string>
+    <string name="menu_today_release">Today Release</string>
+    <string name="lbl_today_release">Today Release</string>
+    <string name="lbl_content_favorites">Content Favorites</string>
+    <string name="lbl_search_movie">Search Movie</string>
+    <string name="lbl_search_tv_show">Search TV Show</string>
+
+</resources>
